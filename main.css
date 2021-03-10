@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+body {
+    font-family: 'Sen', sans-serif;
+}
+
+.navigation {
+    grid-area: navigation;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation ul {
+    width: 25%;
+}
+
+.hero {
+    grid-area: hero;
+    background-color: black;
+    color: white;
+    padding: 6rem;
+    text-align: center;
+}
+
+.first-section {
+    grid-area: firstSection;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 100px;
+    padding: 4rem;
+}
+
+.second-section {
+    grid-area: secondSection;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+    padding: 4rem;
+}
+
+.third-section {
+    grid-area: thirdSection;
+    background-color: lightcyan;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+    padding: 4rem;
+}
+
+.site-layout {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "navigation navigation navigation" "hero hero hero" "firstSection firstSection firstSection" "secondSection secondSection secondSection" "thirdSection thirdSection thirdSection";
+}
