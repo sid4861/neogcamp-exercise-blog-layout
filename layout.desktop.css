@@ -52,4 +52,10 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "navigation navigation navigation" "hero hero hero" "firstSection firstSection firstSection" "secondSection secondSection secondSection" "thirdSection thirdSection thirdSection";
     }
+    .para-layout {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        justify-content: space-around;
+    }
 }

@@ -20,7 +20,8 @@ body {
     grid-area: hero;
     background-color: black;
     color: white;
-    padding: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     text-align: center;
 }
 
@@ -28,7 +29,7 @@ body {
     grid-area: firstSection;
     background-color: pink;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 100px;
     padding: 4rem;
 }
@@ -37,7 +38,7 @@ body {
     grid-area: secondSection;
     background-color: grey;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 100px;
     padding: 4rem;
 }
@@ -46,7 +47,7 @@ body {
     grid-area: thirdSection;
     background-color: lightcyan;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 100px;
     padding: 4rem;
 }
@@ -56,4 +57,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "navigation navigation navigation" "hero hero hero" "firstSection firstSection firstSection" "secondSection secondSection secondSection" "thirdSection thirdSection thirdSection";
+}
+
+.para-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
